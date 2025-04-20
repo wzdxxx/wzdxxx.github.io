@@ -20,10 +20,10 @@
   --btn-default-hover-bg: #222;
   --btn-default-hover-color: #fff;
   --btn-default-hover-border-color: #222;
-  --highlight-background: #1e1e1e;
-  --highlight-foreground: #dcdcdc;
-  --highlight-gutter-background: #313131;
-  --highlight-gutter-foreground: #c9c9c9;
+  --highlight-background: #000;
+  --highlight-foreground: #eaeaea;
+  --highlight-gutter-background: #171717;
+  --highlight-gutter-foreground: #d2d2d2;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
@@ -49,10 +49,10 @@
     --btn-default-hover-bg: #666;
     --btn-default-hover-color: #ccc;
     --btn-default-hover-border-color: #666;
-    --highlight-background: #1e1e1e;
-    --highlight-foreground: #dcdcdc;
-    --highlight-gutter-background: #313131;
-    --highlight-gutter-foreground: #c9c9c9;
+    --highlight-background: #000;
+    --highlight-foreground: #eaeaea;
+    --highlight-gutter-background: #171717;
+    --highlight-gutter-foreground: #d2d2d2;
     color-scheme: dark;
   }
   img {
@@ -225,7 +225,7 @@ body {
   background: var(--body-bg-color);
   box-sizing: border-box;
   color: var(--text-color);
-  font-family: Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Noto Serif SC, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 1em;
   line-height: 2;
   min-height: 100%;
@@ -238,7 +238,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Noto Serif SC, Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Noto Serif SC, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 30px 0 15px;
@@ -412,97 +412,65 @@ pre code.hljs {
 code.hljs {
   padding: 3px 5px
 }
-/*
- * Visual Studio 2015 dark style
- * Author: Nicolas LLOBERA <nllobera@gmail.com>
- */
-.hljs {
-  background: #1E1E1E;
-  color: #DCDCDC
-}
-.hljs-keyword,
-.hljs-literal,
-.hljs-symbol,
-.hljs-name {
-  color: #569CD6
-}
-.hljs-link {
-  color: #569CD6;
-  text-decoration: underline
-}
-.hljs-built_in,
-.hljs-type {
-  color: #4EC9B0
-}
-.hljs-number,
-.hljs-class {
-  color: #B8D7A3
-}
-.hljs-string,
-.hljs-meta .hljs-string {
-  color: #D69D85
-}
-.hljs-regexp,
-.hljs-template-tag {
-  color: #9A5334
-}
-.hljs-subst,
-.hljs-function,
-.hljs-title,
-.hljs-params,
-.hljs-formula {
-  color: #DCDCDC
-}
+/* Tomorrow Night Bright Theme */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Tomorrow Comment */
 .hljs-comment,
 .hljs-quote {
-  color: #57A64A;
-  font-style: italic
+  color: #969896
 }
-.hljs-doctag {
-  color: #608B4E
-}
-.hljs-meta,
-.hljs-meta .hljs-keyword,
-.hljs-tag {
-  color: #9B9B9B
-}
+/* Tomorrow Red */
 .hljs-variable,
-.hljs-template-variable {
-  color: #BD63C5
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+  color: #d54e53
 }
-.hljs-attr,
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+  color: #e78c45
+}
+/* Tomorrow Yellow */
 .hljs-attribute {
-  color: #9CDCFE
+  color: #e7c547
 }
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+  color: #b9ca4a
+}
+/* Tomorrow Blue */
+.hljs-title,
 .hljs-section {
-  color: gold
+  color: #7aa6da
+}
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+  color: #c397d8
+}
+.hljs {
+  background: black;
+  color: #eaeaea
 }
 .hljs-emphasis {
   font-style: italic
 }
 .hljs-strong {
   font-weight: bold
-}
-/*.hljs-code {
-  font-family:'Monospace';
-}*/
-.hljs-bullet,
-.hljs-selector-tag,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-selector-attr,
-.hljs-selector-pseudo {
-  color: #D7BA7D
-}
-.hljs-addition {
-  background-color: #144212;
-  display: inline-block;
-  width: 100%
-}
-.hljs-deletion {
-  background-color: #600;
-  display: inline-block;
-  width: 100%
 }
 .highlight:hover .copy-btn,
 .code-container:hover .copy-btn {
@@ -1132,7 +1100,7 @@ pre code {
   color: var(--brand-hover-color);
 }
 .site-title {
-  font-family: Noto Serif SC, Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Noto Serif SC, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 1.375em;
   font-weight: normal;
   line-height: 1.5;
@@ -1273,7 +1241,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #55f9b3;
+    background: #678860;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1868,7 +1836,7 @@ pre code {
   width: 4px;
 }
 .post-body {
-  font-family: Fira SC, Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Noto Serif SC, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   overflow-wrap: break-word;
 }
 @media (min-width: 1200px) {
@@ -2054,7 +2022,7 @@ pre code {
 }
 .posts-expand .post-meta-container {
   color: #999;
-  font-family: Fira SC, Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Noto Serif SC, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 0.75em;
   margin-top: 3px;
 }
